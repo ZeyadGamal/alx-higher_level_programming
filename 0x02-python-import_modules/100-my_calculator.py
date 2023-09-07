@@ -5,18 +5,18 @@ if __name__ == "__main__":
 
     count = len(sys.argv) - 1
     if count != 3:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     operator = sys.argv[2]
-    if operator == '+':
+    if operator == "+":
         answer = add(a, b)
-    elif operator == '-':
+    elif operator == "-":
         answer = sub(a, b)
-    elif operator == '*':
+    elif operator == "*":
         answer = mul(a, b)
-    elif operator == '/':
+    elif operator == "/":
         answer = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
