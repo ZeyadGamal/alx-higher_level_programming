@@ -1,4 +1,14 @@
 #!/usr/include/python3
+def subtract(list_number):
+    sub = 0
+    max_list = max(list_number)
+
+    for num in list_number:
+        if max_list > num:
+            sub += num
+    return (max_list - sub)
+
+
 def roman_to_int(roman_string):
     if roman_string is None:
         return (0)
@@ -21,13 +31,3 @@ def roman_to_int(roman_string):
     number += subtract(list_number)
 
     return (number)
-
-
-def subtract(list_number):
-    sub = 0
-    max_list = max(list_number)
-
-    for num in list_number:
-        if max_list > num:
-            sub += num
-    return (max_list - sub)
