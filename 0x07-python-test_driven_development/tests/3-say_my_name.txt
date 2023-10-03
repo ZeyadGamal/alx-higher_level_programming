@@ -1,0 +1,27 @@
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+>>> say_my_name("Zeyad", None)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(None, "Gamal")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name(100, "Gamal")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Zeyad", 100)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name("Zeyad", "Gamal")
+My name is Zeyad Gamal
+
+>>> say_my_name("Zeyad")
+My name is Zeyad
+
+>>> say_my_name("Zeyad", "Gamal", "Abdrabo")
+Traceback (most recent call last):
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
