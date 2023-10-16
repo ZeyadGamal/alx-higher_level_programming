@@ -71,10 +71,15 @@ class Rectangle(Base):
 
     def display(self):
         """prints the rectangle with # character"""
-        if self.height is 0 or self.width is 0:
+        if self.height == 0 or self.width == 0:
             print("")
             return
         for h in range(self.height):
             for w in range(self.width):
                 print("#", end="")
             print("")
+
+    def __str__(self):
+        s = f"[{self.__class__.__name__}] ({self.id}) {self.x}/{self.y}"
+        s += f" - {self.width}/{self.height}"
+        return s
