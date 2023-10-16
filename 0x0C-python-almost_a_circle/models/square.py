@@ -24,6 +24,7 @@ class Square(Rectangle):
         return (s)
 
     def update(self, *args, **kwargs):
+        """assigns arguments to parameters"""
         if args and len(args) != 0:
             i = 0
             for arg in args:
